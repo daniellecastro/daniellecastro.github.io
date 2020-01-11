@@ -1,0 +1,38 @@
+header {
+    width: 960px;
+    margin: 0 auto;
+    padding: 5px;
+    background-color: #4F72A7;
+    color: white;
+    font-family: 'chantal' , sans-serif;
+    text-align: center;
+  }
+
+main, footer {
+    width: 960px;
+    margin: 0 auto;
+    padding: 5px;
+    font-family: utopia-std-caption, serif;
+    background-color: #4F72A7;
+    color: white;
+}
+
+a:link {
+    color: white;
+}
+
+a:visited {
+    color: white;
+}
+
+a:hover {
+    color: #EA9C27;
+}
+
+a:active {
+    color: #E8BD30;
+}
+
+footer {
+    text-align: center;
+}
