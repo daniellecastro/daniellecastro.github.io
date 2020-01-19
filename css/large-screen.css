@@ -1,5 +1,8 @@
 @media screen and (min-width: 50em) {
-    img {
-        float: right;
+    #designprinciples {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        text-align: center;
+        grid-gap: 5px;
     }
 }
