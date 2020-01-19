@@ -1,3 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Alata|Gelasio&display=swap');
+/* font-family: 'Alata', sans-serif; */
+/* font-family: 'Gelasio', serif; */
+
+html *{
+    box-sizing: border-box;
+}
+
+*::before, *::after{
+    box-sizing: border-box;
+}
+
 header {
     width: 960px;
     margin: 0 auto;
@@ -15,6 +27,19 @@ main, footer {
     font-family: utopia-std-caption, serif;
     background-color: #4F72A7;
     color: white;
+}
+
+h3 {
+    font-family: 'Alata', sans-serif;
+    font-size: 1.5em;
+}
+
+.design p {
+    font-family: 'Gelasio', serif;
+}
+
+#designprinciples {
+    text-align: center;
 }
 
 a:link {
