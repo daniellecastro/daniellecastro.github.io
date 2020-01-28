@@ -1,6 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Alata|Gelasio&display=swap');
-/* font-family: 'Alata', sans-serif; */
-/* font-family: 'Gelasio', serif; */
+@import url('https://fonts.googleapis.com/css?family=Bowlby+One+SC&display=swap');
+/* font-family: 'Bowlby One SC', cursive; */
+@import url('https://fonts.googleapis.com/css?family=Francois+One&display=swap');
+/* font-family: 'Francois One', sans-serif; */
 
 html *{
     box-sizing: border-box;
@@ -10,40 +11,39 @@ html *{
     box-sizing: border-box;
 }
 
+html {
+    background-color: #FFFCF9;
+}
+
 header {
-    width: 960px;
+    width: 1200px;
     margin: 0 auto;
     padding: 5px;
-    background-color: #4F72A7;
-    color: white;
-    font-family: 'chantal' , sans-serif;
-    text-align: center;
-  }
+    background-color: #6E98B0;
+}
 
-main, footer {
-    width: 960px;
+header h1 {
+    font-family: 'Bowlby One SC', cursive;
+    color: #FFFCF9;
+    letter-spacing: 2px;
+}
+
+body {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+footer {
+    width: 1200px;
     margin: 0 auto;
     padding: 5px;
     font-family: utopia-std-caption, serif;
-    background-color: #4F72A7;
+    background-color: #6E98B0;
     color: white;
 }
 
-h3 {
-    font-family: 'Alata', sans-serif;
-    font-size: 1.5em;
-}
-
-.design p {
-    font-family: 'Gelasio', serif;
-}
-
-#designprinciples {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    text-align: center;
-    grid-gap: 5px;
-}
+h1 {
+} 
 
 a:link {
     color: white;
@@ -70,8 +70,10 @@ nav ul li {
     display: inline;
     padding-left: 20px;
     padding-right: 20px;
+    
 }
 
 nav ul li a {
     text-decoration: none;
+    font-family: 'Francois One', sans-serif;
 }
