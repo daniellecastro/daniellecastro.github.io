@@ -54,26 +54,35 @@ a:visited {
 }
 
 a:hover {
-    color: #EA9C27;
+    color: #E8CB7D;
 }
 
 a:active {
-    color: #E8BD30;
-}
+    color: #DD7044;
+} 
 
 footer {
     text-align: center;
 }
 
+nav ul {
+    display: flex;
+    padding: 0;
+    list-style: none;
+    justify-content: space-evenly;   
+}
+
 nav ul li {
-    list-style-type: none;
-    display: inline;
-    padding-left: 20px;
-    padding-right: 20px;
-    
+    text-decoration: none;
+    font-family: 'Francois One', sans-serif;
+    font-size: 1.25em;
 }
 
 nav ul li a {
     text-decoration: none;
-    font-family: 'Francois One', sans-serif;
+}
+
+#logobox {
+    display: flex;
+    align-items: center;
 }
