@@ -16,8 +16,6 @@ html {
 }
 
 header {
-    width: 1200px;
-    margin: 0 auto;
     padding: 5px;
     background-color: #6E98B0;
 }
@@ -26,24 +24,41 @@ header h1 {
     font-family: 'Bowlby One SC', cursive;
     color: #FFFCF9;
     letter-spacing: 2px;
+    font-size: 1.15em;
 }
 
-body {
-    width: 1200px;
-    margin: 0 auto;
+main {
+    padding: 5px;
 }
 
 footer {
-    width: 1200px;
-    margin: 0 auto;
     padding: 5px;
     font-family: utopia-std-caption, serif;
     background-color: #6E98B0;
     color: white;
 }
 
-h1 {
-} 
+#logo {
+    width: 25%;
+}
+
+h2 {
+    font-family: 'Bowlby One SC', cursive;
+    color: #6E98B0;
+    display: flex;
+    justify-content: center;
+    letter-spacing: 2px;
+}
+
+h3 {
+    font-family: 'Francois One', sans-serif;
+    text-align: center;
+    color: white;
+}
+
+p {
+    font-family: utopia-std-caption, serif;
+}
 
 a:link {
     color: white;
@@ -75,7 +90,7 @@ nav ul {
 nav ul li {
     text-decoration: none;
     font-family: 'Francois One', sans-serif;
-    font-size: 1.25em;
+    font-size: 1em;
 }
 
 nav ul li a {
@@ -85,4 +100,14 @@ nav ul li a {
 #logobox {
     display: flex;
     align-items: center;
+}
+
+.header1, .header2, .header3 {
+    background-color: #DD7044;
+    padding: 10px;
+}
+
+.content1, .content2, .content3 {
+    background-color: #E8CB7D;
+    padding: 10px;
 }
