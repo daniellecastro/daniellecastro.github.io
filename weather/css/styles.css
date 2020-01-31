@@ -53,7 +53,6 @@ h2 {
 h3 {
     font-family: 'Francois One', sans-serif;
     text-align: center;
-    color: white;
 }
 
 p {
@@ -105,9 +104,60 @@ nav ul li a {
 .header1, .header2, .header3 {
     background-color: #DD7044;
     padding: 10px;
+    color: white;
 }
 
 .content1, .content2, .content3 {
     background-color: #E8CB7D;
     padding: 10px;
+}
+
+/* Larger Screen Styles  */
+@media screen and (min-width: 768px) {
+    #logo {
+        width: 150px;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    nav ul li {
+        font-size: 1.25em;
+    }
+    
+    #home-box {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 10px;
+    }
+
+    .header1 {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .content1 {
+        grid-column: 1;
+        grid-row: 2;
+    }
+    .header2 {
+        background-color: #E8CB7D;
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .content2 {
+        background-color: #DD7044;
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    .header3 {
+
+    }
+
+    .content3 {
+        
+    }
 }

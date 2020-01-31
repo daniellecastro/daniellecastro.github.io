@@ -32,7 +32,4 @@ ul li {
 
 /* Larger Screen Styles  */
 @media screen and (min-width: 40em) {
-    main {
-        display: flex;
-    }
 }
