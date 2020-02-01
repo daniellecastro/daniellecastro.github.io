@@ -198,33 +198,33 @@ nav ul li a {
 
     #prestoncontent {
         display: grid;
-        grid-template-columns: repeat(5, 300px);
-        grid-gap: 5px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 10px;
     }
 
     #currentconditions {
-        width: 910px;
-        grid-column: 2;
+        width: 99%;
+        grid-column: 1/4;
         grid-row: 1;
         align-items: center;
 
     }
 
     #temperature {
-        width: 300px;
-        grid-column: 2;
+        width: 99%;
+        grid-column: 1;
         grid-row: 2;
     }
 
     #conditions {
-        width: 300px;
-        grid-column: 3;
+        width: 99%;
+        grid-column: 2;
         grid-row: 2;
     }
 
     #wind {
-        width: 300px;
-        grid-column: 4;
+        width: 97%;
+        grid-column: 3;
         grid-row: 2;
     }
 
