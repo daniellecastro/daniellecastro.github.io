@@ -112,6 +112,41 @@ nav ul li a {
     padding: 10px;
 }
 
+.locationtitle {
+    background-color: #DD7044;
+    color: white;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+}
+
+.locationtitle h2 {
+    color: white;
+}
+
+.locationtitle p {
+    font-family: 'Francois One', sans-serif;
+}
+
+#prestoncontent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#currentconditions, #temperature, #conditions, #wind {
+    background-color: #E8CB7D;
+    width: 75%;
+    padding: 5px;
+    margin: 10px;
+}
+
+#prestoncontent h3 {
+    color: #DD7044
+}
+
+
 /* Larger Screen Styles  */
 @media screen and (min-width: 768px) {
     #logo {
@@ -158,6 +193,43 @@ nav ul li a {
     }
 
     .content3 {
-        
+
+    }
+
+    #prestoncontent {
+        display: grid;
+        grid-template-columns: repeat(5, 300px);
+        grid-gap: 5px;
+    }
+
+    #currentconditions {
+        width: 910px;
+        grid-column: 2;
+        grid-row: 1;
+        align-items: center;
+
+    }
+
+    #temperature {
+        width: 300px;
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    #conditions {
+        width: 300px;
+        grid-column: 3;
+        grid-row: 2;
+    }
+
+    #wind {
+        width: 300px;
+        grid-column: 4;
+        grid-row: 2;
+    }
+
+    #currentconditions, #temperature, #conditions, #wind {
+        padding: 5px;
+        margin: 10px;
     }
 }
