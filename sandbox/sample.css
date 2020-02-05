@@ -1,3 +1,17 @@
+/* Build an index*/
+/* 1. Imports
+2. General rules
+2.1 chnage the box model
+2.2 body rules 
+2.3 structure rules
+3. mobile rules
+3.1 nav bar
+3.2 sectin layout rules
+4. large screen rules (meida query)
+4.1 anv bar
+4.2 section layout
+*/
+
 /* Change box model  */
 html {
  box-sizing: border-box;
@@ -18,11 +32,22 @@ body{
     font-size: 30px;
 }
 
+#pageFooter {
+    margin-bottom: 5rem;
+}
+
+#pageNav {
+    background-color: white;
+    width: 100%;
+}
 ul {
     display: flex;
     padding: 0;
     list-style: none;
     justify-content: space-evenly;
+    position: fixed;
+    bottom: 0;
+    background-color: white;
 }
 
 ul li {
@@ -33,3 +58,4 @@ ul li {
 /* Larger Screen Styles  */
 @media screen and (min-width: 40em) {
 }
+

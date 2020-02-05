@@ -59,31 +59,37 @@ p {
     font-family: utopia-std-caption, serif;
 }
 
-a:link {
-    color: white;
-}
-
-a:visited {
-    color: white;
-}
-
-a:hover {
-    color: #E8CB7D;
-}
-
-a:active {
-    color: #DD7044;
-} 
-
 footer {
     text-align: center;
 }
 
+a:link {
+    color: #E8CB7D;
+}
+
+a:visited {
+    color: #E8CB7D;
+}
+
+a:hover {
+    color: #DD7044;
+}
+
+a:active {
+    color: white;
+} 
+
+/* nav {
+    position: fixed;
+    bottom: 0;
+} */
+
 nav ul {
     display: flex;
-    padding: 0;
+    padding: 0px;
     list-style: none;
-    justify-content: space-evenly;   
+    justify-content: space-evenly;
+    /* background-color:#6E98B0; */
 }
 
 nav ul li {
@@ -99,6 +105,15 @@ nav ul li a {
 #logobox {
     display: flex;
     align-items: center;
+}
+
+#tagline {
+    display: block;
+    text-align: left;
+    font-size: 1em;;
+    margin-top: -25px;
+    margin-left: 90px;
+    color: white;
 }
 
 .header1, .header2, .header3 {
@@ -157,8 +172,41 @@ nav ul li a {
         font-size: 2em;
     }
 
+    /* nav ul {
+        display: flex;
+        padding: 0;
+        list-style: none;
+        justify-content: space-evenly;
+        background-color: none;      
+    } */
+
     nav ul li {
         font-size: 1.25em;
+    }
+
+    a:link {
+        color: white;
+    }
+    
+    a:visited {
+        color: white;
+    }
+    
+    a:hover {
+        color: #E8CB7D;
+    }
+    
+    a:active {
+        color: #DD7044;
+    } 
+
+    #tagline {
+        display: block;
+        text-align: left;
+        margin-top: -50px;
+        padding-left: 60px;
+        padding-bottom: 30px;
+        font-size: 1.5em;
     }
     
     #home-box {
