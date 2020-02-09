@@ -86,7 +86,7 @@ a:active {
 
 nav ul {
     display: flex;
-    padding: 0px;
+    padding: 0;
     list-style: none;
     justify-content: space-evenly;
     /* background-color:#6E98B0; */
@@ -130,10 +130,8 @@ nav ul li a {
 .locationtitle {
     background-color: #DD7044;
     color: white;
-    padding: 5px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    width: 100%;
+    text-align: center;
     align-self: center;
 }
 
@@ -150,7 +148,7 @@ nav ul li a {
     flex-direction: column;
     align-items: center;
 }
-#currentconditions, #temperature, #conditions, #wind {
+.currentconditions, .temperature, .precipitation, .wind {
     background-color: #E8CB7D;
     width: 75%;
     padding: 5px;
@@ -161,6 +159,87 @@ nav ul li a {
     color: #DD7044
 }
 
+.component{
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    position: relative;
+    border-radius: 90%;
+    display: flex;
+    justify-content: center;
+}
+    
+.inner{
+    width: 150px;
+    height: 150px;
+    background-color: #E8CB7D;
+    border-radius: 90%;
+    align-self: center;
+}
+
+.centersymbol {
+    display: flex;
+    justify-content: center;
+    margin: 55px;
+    font-size:2em;
+}
+
+.numbers {
+    list-style-type: none;
+    padding: 0;
+    position: absolute;
+    font-size: 1.25em;
+  }
+  
+  .n1 {
+    margin-top: 5px;
+    margin-left: 150px;
+  }
+  
+  .n2 {
+    margin-top: 15px;
+    margin-left: 175px;
+  }
+  
+  .n3 {
+    margin-top: 20px;
+    margin-left: 175px;
+  }
+  
+  .n4 {
+    margin-top: 10px;
+    margin-left: 160px;
+  }
+  
+  .n5 {
+    margin-top: 5px;
+    margin-left: 125px;
+  }
+  
+  .n6 {
+    margin-top: -10px;
+    margin-left: 85px;
+  }
+  
+  .n7 {
+    margin-top: -35px;
+    margin-left: 40px;
+  }
+  
+  .n8 {
+    margin-top: -55px;
+    margin-left: 10px;
+  }
+  
+  .n9 {
+    margin-top: -60px;
+    margin-left: 0px;
+  }
+  
+  .n10 {
+    margin-top: -70px;
+    margin-left: 5px;
+  }
 
 /* Larger Screen Styles  */
 @media screen and (min-width: 768px) {
@@ -246,38 +325,47 @@ nav ul li a {
 
     #prestoncontent {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(7, 1fr);
         grid-gap: 10px;
     }
 
-    #currentconditions {
-        width: 99%;
-        grid-column: 1/4;
+    .locationtitle {
+        width: 100%;
+        margin: 0 auto;
+        grid-column: 3/6;
         grid-row: 1;
-        align-items: center;
-
     }
 
-    #temperature {
-        width: 99%;
-        grid-column: 1;
+    .currentconditions {
+        width: 100%;
+        margin: 0 auto;
+        grid-column: 3/6;
         grid-row: 2;
     }
 
-    #conditions {
-        width: 99%;
-        grid-column: 2;
-        grid-row: 2;
+    .temperature {
+        width: 100%;
+        margin: 0 auto;
+        grid-column: 3/4;
+        grid-row: 3;
     }
 
-    #wind {
-        width: 97%;
-        grid-column: 3;
-        grid-row: 2;
+    .precipitation {
+        width: 100%;
+        margin: 0 auto;
+        grid-column: 4/5;
+        grid-row: 3;
     }
 
-    #currentconditions, #temperature, #conditions, #wind {
-        padding: 5px;
-        margin: 10px;
+    .wind {
+        width: 100%;
+        margin: 0 auto;
+        grid-column: 5/6;
+        grid-row: 3;
+    }
+
+    .currentconditions, .temperature, .precipitation, .wind {
+        padding: 20px;
+        margin: 0px;
     }
 }
