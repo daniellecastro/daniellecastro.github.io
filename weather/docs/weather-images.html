@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+    
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Danielle Castro">
+        <link rel="stylesheet" type="text/css" href="weather-images.css"/>        
+        <title>Progressive Loading of Images</title>
+    </head>
+
+    <body>
+        <header>
+            <h1>Progressive Loading of Images</h1>
+        </header>
+
+        <main>
+        <picture>
+            <img src="images/placeholder.jpg" data-src="images/clear.jpg" alt="clear">
+        </picture>
+        <picture>
+            <img src="images/placeholder.jpg" data-src="images/clouds.jpg" alt="clouds">
+        </picture>
+        <picture>
+            <img src="images/placeholder.jpg" data-src="images/fog.jpg" alt="fog">
+        </picture>
+        <picture>
+            <img src="images/placeholder.jpg" data-src="images/rain.jpg" alt="rain">
+        </picture>
+        <picture>
+            <img src="images/placeholder.jpg" data-src="images/snow.jpg" alt="snow">
+        </picture>
+        <script src="weather-images.js"></script>
+        </main>
+
+        <footer>
+        </footer>
+    </body>
+
+</html>
