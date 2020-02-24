@@ -154,9 +154,26 @@ nav ul li a {
     padding: 5px;
     margin: 10px;
 }
+.currentconditions {
+    text-align: center;
+    align-self: center;
+}
+
+.currentconditions p {
+    font-family: 'Francois One', sans-serif;
+    color: white;
+}
 
 #prestoncontent h3 {
     color: #DD7044
+}
+
+#current {
+    font-size: 3em;
+}
+
+#feelslike, #windspeed {
+    font-size: 1.25em;
 }
 
 .component{
@@ -167,6 +184,7 @@ nav ul li a {
     border-radius: 90%;
     display: flex;
     justify-content: center;
+    margin:30px;
 }
     
 .inner{
@@ -189,6 +207,8 @@ nav ul li a {
     padding: 0;
     position: absolute;
     font-size: 1.25em;
+    font-family: 'Francois One', sans-serif;
+    color: #E8CB7D;
   }
   
   .n1 {
@@ -240,6 +260,102 @@ nav ul li a {
     margin-top: -70px;
     margin-left: 5px;
   }
+
+.outer {
+    list-style-type: none;
+    padding: 0;
+    position: absolute;
+    font-size: 1.25em;
+    font-family: 'Francois One', sans-serif;
+    color: #DD7044;
+  }
+  
+  .o1 {
+    margin-top: -45px;
+    margin-left: 120px;
+  }
+  
+  .o2 {
+    margin-top: 20px;
+    margin-left: 205px;
+  }
+  
+  .o3 {
+    margin-top: 23px;
+    margin-left: 225px;
+  }
+  
+  .o4 {
+    margin-top: 20px;
+    margin-left: 225px;
+  }
+  
+  .o5 {
+    margin-top: 20px;
+    margin-left: 210px;
+  }
+  
+  .o6 {
+    margin-top: 20px;
+    margin-left: 165px;
+  }
+  
+  .o7 {
+    margin-top: -10px;
+    margin-left: 110px;
+  }
+  
+  .o8 {
+    margin-top: -30px;
+    margin-left: 60px;
+  }
+  
+  .o9 {
+    margin-top: -65px;
+    margin-left: 15px;
+  }
+  
+  .o10 {
+    margin-top: -80px;
+    margin-left: 0px;
+  }
+  
+  .o11 {
+    margin-top: -75px;
+    margin-left: 5px;
+  }
+
+  .ball {
+    height: 25px;
+    width: 25px;
+    border-radius: 100%;
+    background-color: #DD7044;
+    color: transparent;
+}
+
+#curWeather {
+    background-size: cover;
+}
+
+.clear {
+    background-image: url("/weather/docs/images/clearsmall.jpg");
+}
+
+.clouds {
+    background-image: url("/weather/docs/images/cloudssmall.jpg");
+}
+   
+.fog {
+    background-image: url("/weather/docs/images/fogsmall.jpg");
+}
+
+.rain {
+    background-image: url("/weather/docs/images/rainsmall.jpg");
+}
+
+.snow {
+    background-image: url("/weather/docs/images/snowsmall.jpg");
+}
 
 /* Larger Screen Styles  */
 @media screen and (min-width: 768px) {
