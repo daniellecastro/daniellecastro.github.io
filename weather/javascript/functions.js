@@ -7,12 +7,13 @@ document.addEventListener("DOMContentLoaded", function(){
     let temp = 51;
     let speed = 4.8;
     buildWC(speed,temp);
-    // Implement background weather image
-    let currCond = "Snow";
-    changeSummaryImage(currCond);
     // The Time Indictor function
     let hour = "5";
     timeBall(hour);
+    // Implement background weather image
+    let condition = "rain";
+    condition.toLowerCase();
+    changeSummaryImage(condition);
 })
 
 // Displays last modified date
@@ -48,13 +49,16 @@ function timeBall(hour){
     }
     
     // Find all hours that match the parameter and add the "ball" class
-    let hr = document.querySelectorAll(".i"+hour);
+    let hr = document.querySelectorAll(".n"+ hour);
     for (let item of hr){
         item.classList.add("ball");
     }
 }
 
 // display background image
-function changeSummaryImage(currCond) {
-    let 
-} 
+function changeSummaryImage(condition){
+    let container = document.querySelector("#curWeather")
+    console.log(condition);
+    container.classList.add(condition)
+}
+  

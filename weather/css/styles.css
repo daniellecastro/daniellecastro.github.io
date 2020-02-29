@@ -133,6 +133,7 @@ nav ul li a {
     width: 100%;
     text-align: center;
     align-self: center;
+    padding: 10px;
 }
 
 .locationtitle h2 {
@@ -147,6 +148,7 @@ nav ul li a {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 20px;
 }
 .currentconditions, .temperature, .precipitation, .wind {
     background-color: #E8CB7D;
@@ -335,6 +337,7 @@ nav ul li a {
 
 #curWeather {
     background-size: cover;
+    margin-top: 5px;
 }
 
 .clear {
@@ -483,5 +486,25 @@ nav ul li a {
     .currentconditions, .temperature, .precipitation, .wind {
         padding: 20px;
         margin: 0px;
+    }
+
+    .clear {
+        background-image: url("/weather/docs/images/clear.jpg");
+    }
+    
+    .clouds {
+        background-image: url("/weather/docs/images/clouds.jpg");
+    }
+       
+    .fog {
+        background-image: url("/weather/docs/images/fog.jpg");
+    }
+    
+    .rain {
+        background-image: url("/weather/docs/images/rain.jpg");
+    }
+    
+    .snow {
+        background-image: url("/weather/docs/images/snow.jpg");
     }
 }
