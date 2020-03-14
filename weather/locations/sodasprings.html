@@ -7,8 +7,8 @@
     <meta name="description" content="This is the course portal home page for CIT230 - Web Frontend Development">
     <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" type="text/css" href="../css/styles.css"/>
-    
-    <title>Weather Site Plan</title>
+    <link rel="shortcut icon" href="/weather/images/favicon.ico">
+    <title id="page-title">Soda Springs | Weather Site Plan</title>
 </head>
 
 <body>
@@ -17,7 +17,8 @@
             <img id="logo" src="../images/weatherlogoplain.png" alt="site logo">
             <h1>Today Feels Like...</h1>
         </div>
-        <nav>
+        <h3 id="tagline">Answers to your everyday question.</h3>
+        <nav id="page-nav">
             <ul>
                 <li><a href="../index.html">Home</a></li>
                 <li><a href="preston.html">Preston</a></li>
@@ -27,15 +28,115 @@
         </nav>
     </header>
 
-    <main>
+    <section id="status">Please be patient while I get your weather information.</section>
 
+    <main id="main-content" class="hide">
+        <div class="locationtitle">
+        <h2>Soda Springs, Idaho</h2>
+        <p>GPS: 42&deg;5'43"N, 111&deg;52'31"</p>
+        </div>
+        <div id="curWeather">
+        <div id="prestoncontent">
+        <div class="currentconditions">
+        <h3> Current Conditions</h3>
+        <p id="current">51°F</p>
+        <p id="feelslike">Feels like: <span id="feelTemp"></span>°F</p>
+        <p id="windspeed">Wind: 4.8mph</p>
+        </div>
+        <div class="temperature">
+        <h3>Temperature Data</h3>
+        <div class="component">
+            <ul class="numbers">
+                <li class="n1 ball">1</li>
+                <li class="n2 ball">2</li>
+                <li class="n3 ball">3</li>
+                <li class="n4 ball">4</li>
+                <li class="n5 ball">5</li>
+                <li class="n6 ball">6</li>
+                <li class="n7 ball">7</li>
+                <li class="n8 ball">8</li>
+                <li class="n9 ball">9</li>
+                <li class="n10 ball">10</li>
+            </ul>
+            <ul class="outer">
+                <li class="o1">51</li>
+                <li class="o2">53</li>
+                <li class="o3">55</li>
+                <li class="o4">57</li>
+                <li class="o5">58</li>
+                <li class="o6">57</li>
+                <li class="o7">58</li>
+                <li class="o8">58</li>
+                <li class="o9">55</li>
+                <li class="o10">53</li>
+                <li class="o11">52</li>
+            </ul>
+            <div class="inner">
+                <span class="centersymbol">&#8457;</span>
+            </div>
+        </div>
+        </div>
+        <div class="precipitation">
+        <h3>Precipitation</h3>
+        <div class="component">
+            <ul class="numbers">
+                <li class="n1 ball">1</li>
+                <li class="n2 ball">2</li>
+                <li class="n3 ball">3</li>
+                <li class="n4 ball">4</li>
+                <li class="n5 ball">5</li>
+                <li class="n6 ball">6</li>
+                <li class="n7 ball">7</li>
+                <li class="n8 ball">8</li>
+                <li class="n9 ball">9</li>
+                <li class="n10 ball">10</li>
+            </ul>
+            <ul class="outer">
+                <li class="o1">40</li>
+                <li class="o2">20</li>
+                <li class="o3">20</li>
+                <li class="o4">20</li>
+                <li class="o5">20</li>
+                <li class="o6">10</li>
+                <li class="o7">20</li>
+                <li class="o8">20</li>
+                <li class="o9">30</li>
+                <li class="o10">20</li>
+                <li class="o11">10</li>
+            </ul>
+            <div class="inner">
+            <span class="centersymbol">&#9730;%</span>
+            </div>
+        </div>
+        </div>
+        <div class="wind">
+        <h3>Wind Data</h3>
+        <div class="component">
+            <ul class="numbers">
+                <li class="n1">1</li>
+                <li class="n2">2</li>
+                <li class="n3">3</li>
+                <li class="n4">4</li>
+                <li class="n5">5</li>
+                <li class="n6">6</li>
+                <li class="n7">7</li>
+                <li class="n8">8</li>
+                <li class="n9">9</li>
+                <li class="n10">10</li>
+            </ul>
+            <div class="inner">      
+            </div>
+        </div>
+        </div>
+        </div>
+        </div>
     </main>
 
     <footer>
-        <p>&copy; 2020 | Danielle Castro | <a href="https://developer.mozilla.org/en-US/">MDN Documentation Site</a> | BYU-Idaho</p>
+        <p>&copy; 2020 | Danielle Castro | <a id="mdn" href="https://developer.mozilla.org/en-US/">MDN Documentation Site</a> | BYU-Idaho</p>
         <p>Last Modified: <span id="date"></span></p>
     </footer>
-    <script src="../javascript/date.js"></script>    
+    <script src="../javascript/functions.js"></script>    
 </body>
 
 </html>

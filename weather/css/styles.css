@@ -360,6 +360,10 @@ nav ul li a {
     background-image: url("/weather/docs/images/snowsmall.jpg");
 }
 
+.hide{
+    display: none;
+  }
+
 /* Larger Screen Styles  */
 @media screen and (min-width: 768px) {
     #logo {
